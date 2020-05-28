@@ -1,0 +1,2 @@
+rootProject.name='com.slashmobility.seleccion.joan.colmenero'
+include ':app'

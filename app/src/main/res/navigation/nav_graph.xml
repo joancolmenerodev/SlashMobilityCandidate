@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/call_to_service_dest">
+
+    <fragment
+        android:id="@+id/call_to_service_dest"
+        android:name="com.joancolmenerodev.comslashmobilityseleccionjoancolmenero.feature.calltoservice.presentation.CallToServiceFragment"
+        android:label="@string/label_call_to_service_fragment"
+        tools:layout="@layout/call_to_service_fragment">
+
+        <action
+            android:id="@+id/go_to_list_action"
+            app:destination="@+id/list_dest" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/list_dest"
+        android:name="com.joancolmenerodev.comslashmobilityseleccionjoancolmenero.feature.list.presentation.ListFragment"
+        android:label="@string/label_list_fragment"
+        tools:layout="@layout/list_fragment" />
+
+</navigation>

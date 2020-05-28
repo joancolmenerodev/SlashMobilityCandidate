@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Selection App</string>
+    <string name="label_call_to_service_fragment">Call to service</string>
+    <string name="label_list_fragment">List</string>
+    <string name="call_service">CALL SERVICE</string>
+    <string name="go_to_list_activity">GO TO LIST ACTIVITY</string>
+    <string name="response">Response %s</string>
+    <string name="no_internet_text">No internet available</string>
+    <string name="not_found_text">Not found</string>
+    <string name="add_entries_button_text">ADD</string>
+    <string name="type_a_number_hint">Type a number</string>
+    <string name="remove_all_entries_button_text">REMOVE ALL ENTRIES</string>
+    <string name="sort_ascending_button_text">SORT ASCENDING</string>
+    <string name="numbers_list_text">Numbers list</string>
+    <string name="the_list_is_empty_text">The list is empty</string>
+    <string name="invalid_input_text">Invalid input</string>
+</resources>

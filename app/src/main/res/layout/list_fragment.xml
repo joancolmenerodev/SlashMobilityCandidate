@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_add_items_to_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="@string/add_entries_button_text" />
+
+        <EditText
+            android:id="@+id/et_input_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:hint="@string/type_a_number_hint"
+            android:inputType="number" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_remove_all_entries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/remove_all_entries_button_text"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btn_sort_ascending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sort_ascending_button_text"
+        app:layout_constraintEnd_toEndOf="@+id/btn_remove_all_entries"
+        app:layout_constraintStart_toStartOf="@+id/btn_remove_all_entries"
+        app:layout_constraintTop_toBottomOf="@+id/btn_remove_all_entries" />
+
+    <TextView
+        android:id="@+id/tv_numbers_list_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/numbers_list_text"
+        app:layout_constraintEnd_toEndOf="@+id/btn_sort_ascending"
+        app:layout_constraintStart_toStartOf="@+id/btn_sort_ascending"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sort_ascending" />
+
+    <TextView
+        android:id="@+id/tv_empty_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/the_list_is_empty_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_numbers_list_text" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_numbers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_numbers_list_text"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
